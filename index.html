@@ -3,18 +3,30 @@
         <title>
             Unofreight Newsletter
         </title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>
-            Unofreight Newsletter
-        </h1>
-        <p>
-            This newsletter provides employees with a variety of information, includes employees in Unofreight's goals, commnicates positivity to employees, and connects employees to Unofreight's culture and vision.
-        </p>
+        
         <div class="container">
-            <div>
+            <div class= "tile" id="Heading-tile">
+                <h1>
+                    Unofreight Newsletter
+                </h1>
+                <!--<p>
+                    This newsletter provides employees with a variety of information, includes employees in Unofreight's goals, communicates positivity to employees, and connects employees to Unofreight's culture and vision.
+                </p> -->
+            </div>
+            <div class="tile">
+                <h2>Weather Update</h2>
+
+                <p>This section includes a summary of the last month's weather and a forecast for the weather in the month to come.</p>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/44d05n123d09/eugene/?unit=us" data-label_1="EUGENE" data-label_2="WEATHER" data-mode="Forecast" data-theme="original" >EUGENE WEATHER</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
+            <div class="tile">
                 <h2>Unofreight's Latest Wins</h2>
                 <p>This section includes any good news about the company and its drivers, including: 
                     <ul>
@@ -26,11 +38,7 @@
                     </ul>
                 </p>
             </div>
-            <div>
-                <h2>Weather Update</h2>
-                <p>This section includes a summary of the last month's weather and a forecast for the weather in the month to come.</p>
-            </div>
-            <div><h2>Employee Spotlight</h2>
+            <div class="tile"><h2>Employee Spotlight</h2>
             <p>This section highlights an employee, sharing details about them including:
                 <ul>
                     <li>How long the employee has been with the company</li>
@@ -45,7 +53,7 @@
                     </figure>
                 </ul>
             </p></div>
-            <div>
+            <div class="tile">
                 <h2>
                     News
                 </h2>
@@ -59,7 +67,7 @@
                     National and International
                     </h3>
             </div>
-            <div>
+            <div class="tile">
                 <h2>Calendar</h2>
                 <p>This will be a graphic of the current events of the company on a calendar outlook. The calendar will display:
                     <ul>
@@ -72,18 +80,22 @@
                     </ul>
                 </p>
             </div>
-            <div>
-                <h2>Mechanical Tips</h2>
+            <div class="tile">
+                <h2>Mechanical Tip</h2>
                 <p>This section includes a brief, helpful tip about maintenance.</p>
             </div>
-            <div><h2>Try this!</h2>
-            <p>A recipe to try designed for on-the-road preparation.</p></div>
-            <div><h2>DOT Compliance Spotlight</h2>
-            <p>A brief policy spotlight/training reminder</p></div>
-            <div><h2>Safety Tip</h2>
-            <p>A safety tip from the latest training.</p></div>
-        
-        </div>
-         
+            <div class="tile">
+                <h2>Try this!</h2>
+                <p>A recipe to try designed for on-the-road preparation.</p>
+            </div>
+            <div class="tile">
+                <h2>DOT Compliance Spotlight</h2>
+                <p>A brief policy spotlight/training reminder</p>
+            </div>
+            <div class="tile">
+                <h2>Safety Tip</h2>
+                <p>A safety tip from the latest training.</p>
+            </div>
+        </div>     
     </body>
 </html>

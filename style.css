@@ -1,7 +1,51 @@
-body{
-    background-color: rgb(234, 234, 234);
+:root {
+  --primary-color: rgb(25, 31, 36); /* Charcoal gray */
+  --secondary-color: rgb(243, 246, 246); /* platinum white */
 }
+body{
+    background-color: var(--primary-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: var(--primary-color); 
+    gap: 8px;   
+}
+
 .employee-photo{
     max-width: 100%;
     height: auto;
+}
+.container{
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    place-content: center;
+    gap: 8px; 
+}
+.weather{
+    display: inline-block; 
+    
+}
+.tile{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 8px; 
+    }
+#Heading-tile{
+    grid-column: 1 / -1; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase; 
+    font-size: clamp(1rem, calc(1rem + 2vw), 3rem);
+    background-image: url(images/stone_ID.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;  
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+}    
+.company-news{
+    display: block; 
+    max-width: 100%;
+    background-color: var(--secondary-color); 
+    
+    padding: 8px;
+
 }
