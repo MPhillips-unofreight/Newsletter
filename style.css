@@ -1,14 +1,35 @@
+/*Variables*/
 :root {
   --text: rgb(25, 31, 36); /* Charcoal gray */
   --background: rgb(243, 246, 246); /* platinum white */
   --tile: #EFE9E3; /*offwhite*/
 }
+/*reset*/
+li {
+    list-style-type: none;
+}
+
+#Heading-tile{
+    grid-column: 1 / -1; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase; 
+    font-size: clamp(1rem, calc(1rem + 2vw), 3rem);
+    background-image: url(images/stone_ID.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;  
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+    /*check responsiveness*/
+} 
 body{
     background-color: var(--background);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     color: var(--text);  
 }
-img, picture, video{ /*ensures that none of these elements overflow the size of their contianer*/
+img, picture, video{ /*ensures that none of these elements overflow 
+    the size of their container*/
     max-width: 100%;
 }
 .container1{ /*unotech article and employee spotlight*/
@@ -47,21 +68,19 @@ img, picture, video{ /*ensures that none of these elements overflow the size of 
     background-color: var(--tile);
     padding: 8px;
     }
-#Heading-tile{
-    grid-column: 1 / -1; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase; 
-    font-size: clamp(1rem, calc(1rem + 2vw), 3rem);
-    background-image: url(images/stone_ID.jpg); 
-    background-size: cover; 
-    background-position: center; 
-    text-align: center;  
-    -webkit-background-clip: text;
-    background-clip: text; 
-    color: transparent;
-    /*check responsiveness*/
-}    
-
+   
+/*small tablet styles*/
+@media screen and (min-width: 620px ){
+    
+}
+/*large tablet and laptop styles*/
+@media screen and (mid-width: 960px){
+    
+}
+/*desktop styles*/
+@media screen and (mid-width: 1200px){
+    
+}
 @media (prefers-color-scheme:dark) {
     :root{
         --text: rgb(243, 246, 246); /* platinum white */
