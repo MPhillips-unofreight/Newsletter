@@ -8,44 +8,40 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     color: var(--text);  
 }
-.container{
+img, picture, video{ /*ensures that none of these elements overflow the size of their contianer*/
+    max-width: 100%;
+}
+.container1{ /*unotech article and employee spotlight*/
     display: flex; 
+    flex: 1; 
     margin-left: auto; 
     margin-right: auto;
-    flex-flow:column wrap; /*allows the flex to wrap over multiple lines*/
+    flex-flow:column; 
     max-width: 80%;
     gap: 16px; 
 }
-#weather-box{
-    order: 1; 
-}
-#Uno-art{
-    order: 2; 
-}
-#emp-spot{
-    order: 3; 
-}
-.employee-photo{
-    max-height: 25%; 
-}
-#news-feed{
-    order: 4; 
-}
-#calendar{
-    order: 5; 
-}
-#mech-tip{
-    order: 6;
-}
-#recipe{
-    order: 7; 
-}
-#DOT-spot{
-    order: 8; 
-}
-#safe-tip{
-    order: 9; 
 
+#employee-photo{
+    
+    /*moblie-first design style
+    optimize image for mobile viewing 
+    make size responsive*/
+}
+.container2{ /*news feed*/
+    display: flex; 
+    margin-left: auto; 
+    margin-right: auto;
+    flex-flow:column; 
+    max-width: 80%;
+    gap: 16px; 
+}
+.container3{/*mechanic tip, recipe, DOT spotlight, safety tip*/
+    display: flex; 
+    margin-left: auto; 
+    margin-right: auto;
+    flex-flow:column; 
+    max-width: 80%;
+    gap: 16px; 
 }
 .tile{
     background-color: var(--tile);
@@ -63,6 +59,7 @@ body{
     -webkit-background-clip: text;
     background-clip: text; 
     color: transparent;
+    /*check responsiveness*/
 }    
 
 @media (prefers-color-scheme:dark) {

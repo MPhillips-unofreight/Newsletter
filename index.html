@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>
@@ -8,8 +9,6 @@
         
     </head>
     <body>
-        
-        <section class="container">
             <div class= "tile" id="Heading-tile">
                 <h1>
                     Unofreight Newsletter
@@ -20,54 +19,62 @@
             </div>
             <div class="tile" id="weather-box">
                 <h2>Weather Update</h2>
-
+                
                 <p>This section includes a summary of the last month's weather and a forecast for the weather in the month to come.</p>
                 <a class="weatherwidget-io" href="https://forecast7.com/en/44d05n123d09/eugene/?unit=us" data-label_1="EUGENE" data-label_2="WEATHER" data-mode="Forecast" data-theme="original" >EUGENE WEATHER</a>
                 <script>
-                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                </script>
-            </div>
-            <div class="tile" id="Uno-art">
-                <h2>Unofreight's Latest Wins</h2>
-                <p>This section includes any good news about the company and its drivers, including: 
-                    <ul>
-                        <li>Progress towards company goals</li>
-                        <li>Information about new or ongoing company initiatives</li>
-                        <li>Changes to or acquisitions of routes</li>
-                        <li>Personnel, hiring and promotions (that are appropriate to be published)</li>
-                        <li>Marriages, births, graduations, etc</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="tile" id="emp-spot"><h2>Employee Spotlight</h2>
-            <p>This section highlights an employee, sharing details about them including:
-                <ul>
-                    <li>How long the employee has been with the company</li>
-                    <li>How long the employee has driven/managed/operated in their capacity</li>
-                    <li>Where they are from</li>
-                    <li>About their family</li>
-                    <li>Hobbies/interests</li>
-                    <li>Recommendations: movies, podcasts, books, music, local restaurants, etc</li>
-                    <figure>
-                        <img src="images/Ross_Jodi.jpg" alt="An image of Ross and Jodi posing together and smiling" class="employee-photo">
-                        <figcaption>Employee's Name</figcaption>
-                    </figure>
-                </ul>
-            </p></div>
-            <div class="tile" id="news-feed">
-                <h2>
-                    News
-                </h2>
-                    <p>
-                        This section includes local and national news articles that are relevant to the company and its employees. Eventually this will be a curated RSS feed.
-                    </p>
-                    <h3>
-                    Local
-                    </h3>
-                    <h3>
-                    National and International
-                    </h3>
-            </div>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                        </script>
+                    </div>
+                <section class="container1">
+                    <div class="tile" id="Uno-art">
+                        <h2>Unofreight's Latest Wins</h2>
+                        <p>This section includes any good news about the company and its drivers, including: 
+                            <ul>
+                                <li>Progress towards company goals</li>
+                                <li>Information about new or ongoing company initiatives</li>
+                                <li>Changes to or acquisitions of routes</li>
+                                <li>Personnel, hiring and promotions (that are appropriate to be published)</li>
+                                <li>Marriages, births, graduations, etc</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tile" id="emp-spot"><h2>Employee Spotlight</h2>
+                        <p>This section highlights an employee, sharing details about them including:
+                            <ul>
+                                <li>How long the employee has been with the company</li>
+                                <li>How long the employee has driven/managed/operated in their capacity</li>
+                                <li>Where they are from</li>
+                                <li>About their family</li>
+                                <li>Hobbies/interests</li>
+                                <li>Recommendations: movies, podcasts, books, music, local restaurants, etc</li>
+                                <figure>
+                                    <img srcset="images/Ross_Jodi_250w.jpg 250w, images/Ross_and_Jodi_320w.jpg 320w" 
+                                    sizes="(width <= 400 px) 250px, 320px" 
+                                    src="Ross_and_Jodi_320w"
+                                    alt="An image of Ross and Jodi posing together and smiling" 
+                                    id="employee-photo" />
+                                    <figcaption>Employee's Name</figcaption>
+                                </figure>
+                            </ul>   
+                        </p></div>
+                </section>
+                <section class="container2">
+                    <div class="tile" id="news-feed">
+                        <h2>
+                            News
+                        </h2>
+                        <p>
+                            This section includes local and national news articles that are relevant to the company and its employees. Eventually this will be a curated RSS feed.
+                        </p>
+                        <h3>
+                            Local
+                        </h3>
+                        <h3>
+                            National and International
+                        </h3>
+                    </div>
+                </section>
             <div class="tile" id="calendar">
                 <h2>Calendar</h2>
                 <p>This will be a graphic of the current events of the company on a calendar outlook. The calendar will display:
@@ -81,6 +88,7 @@
                     </ul>
                 </p>
             </div>
+        <section class="container3">
             <div class="tile" id="mech-tip">
                 <h2>Mechanical Tip</h2>
                 <p>This section includes a brief, helpful tip about maintenance.</p>
@@ -100,3 +108,4 @@
         </section>     
     </body>
 </html>
+
