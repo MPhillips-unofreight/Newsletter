@@ -5,10 +5,21 @@
   --tile: #EFE9E3; /*offwhite*/
 }
 /*reset*/
+body,p,a,ul,li{
+    margin:0; 
+    padding:0; 
+    text-decoration: none;
+}
 li {
     list-style-type: none;
 }
 
+/*fonts*/
+
+@font-face {
+    font-family: 'Sans 3';
+    src: url(Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+}
 #Heading-tile{
     grid-column: 1 / -1; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -27,7 +38,32 @@ body{
     background-color: var(--background);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     color: var(--text);  
+    overflow-x: hidden; /*prevents users from needing to scroll over to view an entire image...and more*/
+    font-family: 'Sans 3';
 }
+
+.button{
+    background: none; 
+    /* //default background for a button is white */
+    border: 2px solid var(--text);
+    color: var(--text); 
+    /* //color of the text inside the button  */
+    padding: 6px 12px; 
+    /* //6px top and bottom, 12px left and right */
+    border-radius: 20px; 
+    /* //rounds the edges of the button */
+    text-transform: uppercase; 
+    /* //makes the text inside the button uppercase */
+    box-shadow: 1 px 2 px 3 px rgba(0,0,0,0.6); 
+    /* //gives the button a tiny drop shadow not sure how */
+    display: inline-block; 
+
+}
+.button:hover{
+    /* consider how to implement a button for light mode vs dark mode */
+    background: var(--text); 
+    color: rgb(211, 211, 211); 
+}    
 img, picture, video{ /*ensures that none of these elements overflow 
     the size of their container*/
     max-width: 100%;
