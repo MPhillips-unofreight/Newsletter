@@ -34,6 +34,8 @@ h2{
 
 p,a,li {
     color: rgb(14, 14, 15); 
+    list-style: square;
+    line-height: 1.5; 
 
 }
 #Heading-tile{
@@ -56,6 +58,7 @@ body{
     color: var(--text);  
     overflow-x: hidden; /*prevents users from needing to scroll over to view an entire image...and more*/
     font-family: 'Sans 3';
+    
 }
 
 .button{
@@ -103,37 +106,46 @@ img, picture, video{ /*ensures that none of these elements overflow
     grid-column: 2/12;
     grid-row: 2; 
 }
-#emp-spot{
-    grid-column: 2/12;
-    grid-row: 3; 
-}
-#news-feed{
-    grid-column: 2/12;
-    grid-row: 4;
-}
-#calendar{
-    grid-column: 2/12;
-    grid-row: 5;
-}
-#mech-tip{
-    grid-column: 2/7;
-    grid-row: 6;
-}
 #safe-tip{
-    grid-column: 7/12;
-    grid-row: 6;
+    grid-column: 2/9;
+    grid-row: 3;
+    background-color: #FF5F15;
 }
-#recipe{
-    grid-column: 2/12; 
-    grid-row: 7; 
+#Tech-updates{
+    grid-column: 9/12;
+    grid-row: 3; 
+
 }
-#DOT-spot{
+#company-bonuses{
     grid-column: 2/12;
+    grid-row: 4; 
+    
+}
+#Payroll{
+    grid-column: 2/12;
+    grid-row: 5; 
+
+}
+#Health{
+    grid-column: 2/12;
+    grid-row: 6; 
+
+}
+#Company-Links{
+    grid-column: 2/12;
+    grid-row: 7; 
+    list-style: none;
+
+}
+
+#Team-merch{
+    grid-column: 2/7; 
     grid-row: 8; 
+
 }
 .tile{
     background-color: var(--tile);
-    padding: 16px;
+    padding: 32px;
     } 
 /*small tablet styles*/
 @media screen and (min-width: 620px ){
